@@ -17,9 +17,7 @@
     document.body.style.background = color;
     document.getElementById('time').innerHTML = time;
     document.getElementById('hexColor').innerHTML = color;
-
-    setTimeout(displayHexClock, 1000);
   }
 
-  displayHexClock();
+  setInterval(displayHexClock, 0);
 }());
