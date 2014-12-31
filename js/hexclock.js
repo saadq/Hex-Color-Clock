@@ -2,8 +2,8 @@
   'use strict';
 
   function hexClock() {
-    var clock = new Date();
-    var hours = clock.getHours(),
+    var clock = new Date(),
+        hours = clock.getHours(),
         mins = clock.getMinutes(),
         secs = clock.getSeconds();
 
