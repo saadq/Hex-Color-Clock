@@ -13,6 +13,7 @@
 
     var time = h + ':' + m + ':' + s;
     var color = '#' + h + m + s;
+
     document.body.style.background = color;
     document.getElementById('time').innerHTML = time;
     document.getElementById('hexColor').innerHTML = color;
