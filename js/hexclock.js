@@ -1,24 +1,24 @@
 (function() {
   'use strict';
 
-  function hexClock() {
+  function displayHexClock() {
     var clock = new Date(),
-        hours = clock.getHours(),
-        mins = clock.getMinutes(),
-        secs = clock.getSeconds();
+        h = clock.getHours(),
+        m = clock.getMinutes(),
+        s = clock.getSeconds();
 
-    if(hours <= 9) hours = '0' + hours;
-    if(mins <= 9) mins = '0' + mins;
-    if(secs <= 9) secs = '0' + secs;
+    if(h <= 9) h = '0' + h;
+    if(m <= 9) m = '0' + m;
+    if(s <= 9) s = '0' + s;
 
-    var time = hours + ':' + mins + ':' + secs;
-    var color = '#' + hours + mins + secs;
+    var time = h + ':' + m + ':' + s;
+    var color = '#' + h + m + s;
     document.body.style.background = color;
     document.getElementById('time').innerHTML = time;
     document.getElementById('hexColor').innerHTML = color;
 
-    setTimeout(hexClock, 1000);
+    setTimeout(displayHexClock, 1000);
   }
 
-  hexClock();
+  displayHexClock();
 }());
