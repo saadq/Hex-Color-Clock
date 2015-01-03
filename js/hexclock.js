@@ -18,6 +18,6 @@
     document.getElementById('time').innerHTML = time;
     document.getElementById('hexColor').innerHTML = color;
   }
-
-  setInterval(displayHexClock, 0);
+  displayHexClock();
+  setInterval(displayHexClock, 1000);
 }());
