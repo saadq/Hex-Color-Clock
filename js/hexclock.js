@@ -20,4 +20,4 @@
   }
   displayHexClock();
   setInterval(displayHexClock, 1000);
-})();
+}());
