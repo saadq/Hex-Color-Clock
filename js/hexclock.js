@@ -7,9 +7,9 @@
         m = clock.getMinutes(),
         s = clock.getSeconds();
 
-    if(h <= 9) h = '0' + h;
-    if(m <= 9) m = '0' + m;
-    if(s <= 9) s = '0' + s;
+    if(h.toString().length < 2) { h = '0' + h; }
+    if(m.toString().length < 2) { m = '0' + m; }
+    if(s.toString().length < 2) { s = '0' + s; }
 
     var time = h + ':' + m + ':' + s;
     var color = '#' + h + m + s;
@@ -20,4 +20,4 @@
   }
   displayHexClock();
   setInterval(displayHexClock, 1000);
-}());
+})();
