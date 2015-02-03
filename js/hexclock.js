@@ -2,7 +2,7 @@
   'use strict';
 
   /**
-  * Converts the current time to a hex color and then changes the background to that color every second.
+  * Converts the current time to a hex color and then changes the background to that color every second
   */
   function displayHexClock() {
     // Get the current time
@@ -19,7 +19,7 @@
     var time = h + ':' + m + ':' + s;
     var color = '#' + h + m + s;
 
-    // Change the background color to the current time
+    // Change the background color to the hex color of the current time
     document.body.style.background = color;
 
     // Update the current time
