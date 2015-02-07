@@ -11,7 +11,7 @@
         m = clock.getMinutes(),
         s = clock.getSeconds();
 
-    // Make sure that hours, minutess, and seconds are all 2 digits each
+    // Make sure that hours, minutes, and seconds are all 2 digits each
     if(h.toString().length < 2) { h = '0' + h; }
     if(m.toString().length < 2) { m = '0' + m; }
     if(s.toString().length < 2) { s = '0' + s; }
